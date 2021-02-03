@@ -69,7 +69,7 @@ return '<input type="checkbox" name="' . $name . '">';
 
     if (count($_POST) == 0) 
     {
-        echo '<form method="post" action="lab9.php">';
+        echo '<form method="post" action="">';  
         echo '<table>';
         echo '<tr><td colspan=2><strong>Lab 9 - Form Processing (User Registration)</td></tr>';
 
@@ -81,7 +81,7 @@ return '<input type="checkbox" name="' . $name . '">';
         echo '<tr><td>Password</td><td>',generate_textbox('txtPassword', $password),'</td></tr>';
         echo '<tr><td>ConfirmPassword</td><td>',generate_textbox('txtConfirmPassword', $confirmpassword),'</td></tr>';
         echo '<tr><td>Comments</td><td>',generate_textarea('txtComments', $comments),'</td></tr>';
-        echo '<tr><td>Agree</td><td>',generate_checkbox('txtLastname', $lastname),'</td></tr>';
+        echo '<tr><td>Agree</td><td>',generate_checkbox('txtAgree', $agree),'</td></tr>';
 
         echo '<tr><td colspan=2>';
         echo '<input type="submit" name="btnRegister" value="Register">&nbsp;';
